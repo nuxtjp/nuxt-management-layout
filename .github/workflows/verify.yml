@@ -31,11 +31,6 @@ jobs:
           node-version: 24
           cache: pnpm
 
-      - name: Materialize the fixed NuxtJP UI package
-        run: |
-          mkdir -p vendor
-          pnpm pack @nuxtjp/ui@0.1.0 --pack-destination vendor
-
       - name: Install locked dependencies
         run: pnpm install --frozen-lockfile
 
