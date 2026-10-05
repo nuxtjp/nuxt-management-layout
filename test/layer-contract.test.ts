@@ -10,7 +10,7 @@ describe('NuxtJP management Layer boundary', () => {
     expect(manifest.main).toBe('./nuxt.config.ts')
     expect(manifest.peerDependencies['@nuxtjp/ui']).toBe('0.1.0')
     expect(manifest.devDependencies['@nuxtjp/ui'])
-      .toBe('file:vendor/nuxtjp-ui-0.1.0.tgz')
+      .toBe('0.1.0')
     expect(manifest.repository.url).toContain('nuxtjp/nuxt-management-layout')
     expect(source('nuxt.config.ts')).toMatch(/modules:\s*\['@nuxtjp\/ui'\]/u)
     expect(source('playground/nuxt.config.ts'))
